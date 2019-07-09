@@ -26,6 +26,7 @@ end
 >>用八位二进制 0011 1001  表示39  二进制值为57  进位后为 0100 0000  表示40<br>
 >>用八位二进制 0100 1001  表示49  二进制值为73  进位后为 0001 0000  表示50<br>
 >>用八位二进制 0101 1001  表示59  二进制值为89  进位后为 0101 1001  表示60<br>
+* * *
 ## 译码模块
 **根据六十进制与二十四进制产生的BCD码为两个BCD码的连接<br>
 Q[0-7]=8'b00101001 表示29<br>
@@ -78,4 +79,39 @@ endcase
 end 
 endmodule 
 ```
-
+* * *
+## 调时分实现
+**CNT_002(clk,rst,EN,Clk); //产生1秒的时钟信号
+CNT_003(clk,rst,EN,Clk1);  //产生用于调节时钟的信号频率稍快
+counter60(Clk,rst,Cs,EN,Q1); //秒计数
+assign q11=Clk;              //用数码管小数点7管脚作为秒的表示
+assign Cs1=Cs||(~FI&&Clk1);  // 当FI为1时即按键未按下不进行调试 FI为0时进行调时
+counter60(Cs1,rst,CF,EN,Q2); 
+yima(Q2,q21,q22);
+assign CF1=CF||(~SI&&Clk1);  // 当SI为1时即按键未按下不进行调试 SI为0时进行调时
+counter24(CF1,rst,Cout,EN,Q3);
+yima(Q3,q31,q32);**
+```
+module time1(clk,rst,EN,q11,q21,q22,q31,q32,Cout,FI,SI);
+input clk,rst,EN,FI,SI;
+output Cout,q11;
+output [6:0]q21;
+output [6:0]q22;
+output [6:0]q31;
+output [6:0]q32;
+wire  [7:0]Q1;
+wire  [7:0]Q2;
+wire  [7:0]Q3;
+wire Clk,Clk1,Cs,CF,Cs1,CF1;
+CNT_002(clk,rst,EN,Clk);
+CNT_003(clk,rst,EN,Clk1);
+counter60(Clk,rst,Cs,EN,Q1);
+assign q11=Clk;
+assign Cs1=Cs||(~FI&&Clk1);
+counter60(Cs1,rst,CF,EN,Q2);
+yima(Q2,q21,q22);
+assign CF1=CF||(~SI&&Clk1);
+counter24(CF1,rst,Cout,EN,Q3);
+yima(Q3,q31,q32);
+endmodule 
+```
