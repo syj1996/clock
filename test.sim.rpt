@@ -1,0 +1,844 @@
+Simulator report for test
+Tue Jul 09 10:24:51 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 445 nodes    ;
+; Simulation Coverage         ;      45.62 % ;
+; Total Number of Transitions ; 218790       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; time1.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; Off        ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      45.62 % ;
+; Total nodes checked                                 ; 445          ;
+; Total output ports checked                          ; 445          ;
+; Total output ports with complete 1/0-value coverage ; 203          ;
+; Total output ports with no 1/0-value coverage       ; 238          ;
+; Total output ports with no 1-value coverage         ; 239          ;
+; Total output ports with no 0-value coverage         ; 241          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |time1|Cs1                       ; |time1|Cs1                       ; out0             ;
+; |time1|clk                       ; |time1|clk                       ; out              ;
+; |time1|q11                       ; |time1|q11                       ; pin_out          ;
+; |time1|q21[0]                    ; |time1|q21[0]                    ; pin_out          ;
+; |time1|q21[1]                    ; |time1|q21[1]                    ; pin_out          ;
+; |time1|q21[2]                    ; |time1|q21[2]                    ; pin_out          ;
+; |time1|q21[3]                    ; |time1|q21[3]                    ; pin_out          ;
+; |time1|q21[4]                    ; |time1|q21[4]                    ; pin_out          ;
+; |time1|q21[5]                    ; |time1|q21[5]                    ; pin_out          ;
+; |time1|q21[6]                    ; |time1|q21[6]                    ; pin_out          ;
+; |time1|yima:comb_12|WideOr0      ; |time1|yima:comb_12|WideOr0      ; out0             ;
+; |time1|yima:comb_12|WideOr1      ; |time1|yima:comb_12|WideOr1      ; out0             ;
+; |time1|yima:comb_12|WideOr2      ; |time1|yima:comb_12|WideOr2      ; out0             ;
+; |time1|yima:comb_12|WideOr3      ; |time1|yima:comb_12|WideOr3      ; out0             ;
+; |time1|yima:comb_12|WideOr4      ; |time1|yima:comb_12|WideOr4      ; out0             ;
+; |time1|yima:comb_12|WideOr5      ; |time1|yima:comb_12|WideOr5      ; out0             ;
+; |time1|yima:comb_12|WideOr6      ; |time1|yima:comb_12|WideOr6      ; out0             ;
+; |time1|counter60:comb_11|Q~3     ; |time1|counter60:comb_11|Q~3     ; out              ;
+; |time1|counter60:comb_11|Q~4     ; |time1|counter60:comb_11|Q~4     ; out              ;
+; |time1|counter60:comb_11|Q~5     ; |time1|counter60:comb_11|Q~5     ; out              ;
+; |time1|counter60:comb_11|Q~6     ; |time1|counter60:comb_11|Q~6     ; out              ;
+; |time1|counter60:comb_11|Q~7     ; |time1|counter60:comb_11|Q~7     ; out              ;
+; |time1|counter60:comb_11|Q~11    ; |time1|counter60:comb_11|Q~11    ; out              ;
+; |time1|counter60:comb_11|Q~12    ; |time1|counter60:comb_11|Q~12    ; out              ;
+; |time1|counter60:comb_11|Q~13    ; |time1|counter60:comb_11|Q~13    ; out              ;
+; |time1|counter60:comb_11|Q~14    ; |time1|counter60:comb_11|Q~14    ; out              ;
+; |time1|counter60:comb_11|Q~15    ; |time1|counter60:comb_11|Q~15    ; out              ;
+; |time1|counter60:comb_11|Q~19    ; |time1|counter60:comb_11|Q~19    ; out              ;
+; |time1|counter60:comb_11|Q~20    ; |time1|counter60:comb_11|Q~20    ; out              ;
+; |time1|counter60:comb_11|Q~21    ; |time1|counter60:comb_11|Q~21    ; out              ;
+; |time1|counter60:comb_11|Q~22    ; |time1|counter60:comb_11|Q~22    ; out              ;
+; |time1|counter60:comb_11|Q~23    ; |time1|counter60:comb_11|Q~23    ; out              ;
+; |time1|counter60:comb_11|Q~27    ; |time1|counter60:comb_11|Q~27    ; out              ;
+; |time1|counter60:comb_11|Q~28    ; |time1|counter60:comb_11|Q~28    ; out              ;
+; |time1|counter60:comb_11|Q~29    ; |time1|counter60:comb_11|Q~29    ; out              ;
+; |time1|counter60:comb_11|Q~30    ; |time1|counter60:comb_11|Q~30    ; out              ;
+; |time1|counter60:comb_11|Q~31    ; |time1|counter60:comb_11|Q~31    ; out              ;
+; |time1|counter60:comb_11|Q~35    ; |time1|counter60:comb_11|Q~35    ; out              ;
+; |time1|counter60:comb_11|Q~36    ; |time1|counter60:comb_11|Q~36    ; out              ;
+; |time1|counter60:comb_11|Q~37    ; |time1|counter60:comb_11|Q~37    ; out              ;
+; |time1|counter60:comb_11|Q~38    ; |time1|counter60:comb_11|Q~38    ; out              ;
+; |time1|counter60:comb_11|Q~39    ; |time1|counter60:comb_11|Q~39    ; out              ;
+; |time1|counter60:comb_11|Q~43    ; |time1|counter60:comb_11|Q~43    ; out              ;
+; |time1|counter60:comb_11|Q~44    ; |time1|counter60:comb_11|Q~44    ; out              ;
+; |time1|counter60:comb_11|Q~45    ; |time1|counter60:comb_11|Q~45    ; out              ;
+; |time1|counter60:comb_11|Q~46    ; |time1|counter60:comb_11|Q~46    ; out              ;
+; |time1|counter60:comb_11|Q~47    ; |time1|counter60:comb_11|Q~47    ; out              ;
+; |time1|counter60:comb_11|Q[2]    ; |time1|counter60:comb_11|Q[2]    ; regout           ;
+; |time1|counter60:comb_11|Q[1]    ; |time1|counter60:comb_11|Q[1]    ; regout           ;
+; |time1|counter60:comb_11|Q[0]    ; |time1|counter60:comb_11|Q[0]    ; regout           ;
+; |time1|counter60:comb_6|Cout     ; |time1|counter60:comb_6|Cout     ; regout           ;
+; |time1|counter60:comb_6|Q~1      ; |time1|counter60:comb_6|Q~1      ; out              ;
+; |time1|counter60:comb_6|Q~2      ; |time1|counter60:comb_6|Q~2      ; out              ;
+; |time1|counter60:comb_6|Q~3      ; |time1|counter60:comb_6|Q~3      ; out              ;
+; |time1|counter60:comb_6|Q~4      ; |time1|counter60:comb_6|Q~4      ; out              ;
+; |time1|counter60:comb_6|Q~5      ; |time1|counter60:comb_6|Q~5      ; out              ;
+; |time1|counter60:comb_6|Q~6      ; |time1|counter60:comb_6|Q~6      ; out              ;
+; |time1|counter60:comb_6|Q~7      ; |time1|counter60:comb_6|Q~7      ; out              ;
+; |time1|counter60:comb_6|Q~9      ; |time1|counter60:comb_6|Q~9      ; out              ;
+; |time1|counter60:comb_6|Q~10     ; |time1|counter60:comb_6|Q~10     ; out              ;
+; |time1|counter60:comb_6|Q~11     ; |time1|counter60:comb_6|Q~11     ; out              ;
+; |time1|counter60:comb_6|Q~12     ; |time1|counter60:comb_6|Q~12     ; out              ;
+; |time1|counter60:comb_6|Q~13     ; |time1|counter60:comb_6|Q~13     ; out              ;
+; |time1|counter60:comb_6|Q~14     ; |time1|counter60:comb_6|Q~14     ; out              ;
+; |time1|counter60:comb_6|Q~15     ; |time1|counter60:comb_6|Q~15     ; out              ;
+; |time1|counter60:comb_6|Q~17     ; |time1|counter60:comb_6|Q~17     ; out              ;
+; |time1|counter60:comb_6|Q~18     ; |time1|counter60:comb_6|Q~18     ; out              ;
+; |time1|counter60:comb_6|Q~19     ; |time1|counter60:comb_6|Q~19     ; out              ;
+; |time1|counter60:comb_6|Q~20     ; |time1|counter60:comb_6|Q~20     ; out              ;
+; |time1|counter60:comb_6|Q~21     ; |time1|counter60:comb_6|Q~21     ; out              ;
+; |time1|counter60:comb_6|Q~22     ; |time1|counter60:comb_6|Q~22     ; out              ;
+; |time1|counter60:comb_6|Q~23     ; |time1|counter60:comb_6|Q~23     ; out              ;
+; |time1|counter60:comb_6|Q~25     ; |time1|counter60:comb_6|Q~25     ; out              ;
+; |time1|counter60:comb_6|Q~26     ; |time1|counter60:comb_6|Q~26     ; out              ;
+; |time1|counter60:comb_6|Q~27     ; |time1|counter60:comb_6|Q~27     ; out              ;
+; |time1|counter60:comb_6|Q~28     ; |time1|counter60:comb_6|Q~28     ; out              ;
+; |time1|counter60:comb_6|Q~29     ; |time1|counter60:comb_6|Q~29     ; out              ;
+; |time1|counter60:comb_6|Q~30     ; |time1|counter60:comb_6|Q~30     ; out              ;
+; |time1|counter60:comb_6|Q~31     ; |time1|counter60:comb_6|Q~31     ; out              ;
+; |time1|counter60:comb_6|Q~33     ; |time1|counter60:comb_6|Q~33     ; out              ;
+; |time1|counter60:comb_6|Q~34     ; |time1|counter60:comb_6|Q~34     ; out              ;
+; |time1|counter60:comb_6|Q~35     ; |time1|counter60:comb_6|Q~35     ; out              ;
+; |time1|counter60:comb_6|Q~36     ; |time1|counter60:comb_6|Q~36     ; out              ;
+; |time1|counter60:comb_6|Q~37     ; |time1|counter60:comb_6|Q~37     ; out              ;
+; |time1|counter60:comb_6|Q~38     ; |time1|counter60:comb_6|Q~38     ; out              ;
+; |time1|counter60:comb_6|Q~39     ; |time1|counter60:comb_6|Q~39     ; out              ;
+; |time1|counter60:comb_6|Q~41     ; |time1|counter60:comb_6|Q~41     ; out              ;
+; |time1|counter60:comb_6|Q~42     ; |time1|counter60:comb_6|Q~42     ; out              ;
+; |time1|counter60:comb_6|Q~43     ; |time1|counter60:comb_6|Q~43     ; out              ;
+; |time1|counter60:comb_6|Q~44     ; |time1|counter60:comb_6|Q~44     ; out              ;
+; |time1|counter60:comb_6|Q~45     ; |time1|counter60:comb_6|Q~45     ; out              ;
+; |time1|counter60:comb_6|Q~46     ; |time1|counter60:comb_6|Q~46     ; out              ;
+; |time1|counter60:comb_6|Q~47     ; |time1|counter60:comb_6|Q~47     ; out              ;
+; |time1|counter60:comb_6|Cout~0   ; |time1|counter60:comb_6|Cout~0   ; out              ;
+; |time1|counter60:comb_6|Q[6]     ; |time1|counter60:comb_6|Q[6]     ; regout           ;
+; |time1|counter60:comb_6|Q[5]     ; |time1|counter60:comb_6|Q[5]     ; regout           ;
+; |time1|counter60:comb_6|Q[4]     ; |time1|counter60:comb_6|Q[4]     ; regout           ;
+; |time1|counter60:comb_6|Q[3]     ; |time1|counter60:comb_6|Q[3]     ; regout           ;
+; |time1|counter60:comb_6|Q[2]     ; |time1|counter60:comb_6|Q[2]     ; regout           ;
+; |time1|counter60:comb_6|Q[1]     ; |time1|counter60:comb_6|Q[1]     ; regout           ;
+; |time1|counter60:comb_6|Q[0]     ; |time1|counter60:comb_6|Q[0]     ; regout           ;
+; |time1|CNT_003:comb_5|Q[0]       ; |time1|CNT_003:comb_5|Q[0]       ; regout           ;
+; |time1|CNT_003:comb_5|Q~9        ; |time1|CNT_003:comb_5|Q~9        ; out              ;
+; |time1|CNT_003:comb_5|Q~10       ; |time1|CNT_003:comb_5|Q~10       ; out              ;
+; |time1|CNT_003:comb_5|Q~11       ; |time1|CNT_003:comb_5|Q~11       ; out              ;
+; |time1|CNT_003:comb_5|Q~12       ; |time1|CNT_003:comb_5|Q~12       ; out              ;
+; |time1|CNT_003:comb_5|Q~13       ; |time1|CNT_003:comb_5|Q~13       ; out              ;
+; |time1|CNT_003:comb_5|Q~14       ; |time1|CNT_003:comb_5|Q~14       ; out              ;
+; |time1|CNT_003:comb_5|Q~15       ; |time1|CNT_003:comb_5|Q~15       ; out              ;
+; |time1|CNT_003:comb_5|Q~16       ; |time1|CNT_003:comb_5|Q~16       ; out              ;
+; |time1|CNT_003:comb_5|Q~17       ; |time1|CNT_003:comb_5|Q~17       ; out              ;
+; |time1|CNT_003:comb_5|Q~18       ; |time1|CNT_003:comb_5|Q~18       ; out              ;
+; |time1|CNT_003:comb_5|Q~19       ; |time1|CNT_003:comb_5|Q~19       ; out              ;
+; |time1|CNT_003:comb_5|Q~20       ; |time1|CNT_003:comb_5|Q~20       ; out              ;
+; |time1|CNT_003:comb_5|Q~21       ; |time1|CNT_003:comb_5|Q~21       ; out              ;
+; |time1|CNT_003:comb_5|Q~22       ; |time1|CNT_003:comb_5|Q~22       ; out              ;
+; |time1|CNT_003:comb_5|Q~23       ; |time1|CNT_003:comb_5|Q~23       ; out              ;
+; |time1|CNT_003:comb_5|Q[12]      ; |time1|CNT_003:comb_5|Q[12]      ; regout           ;
+; |time1|CNT_003:comb_5|Q[11]      ; |time1|CNT_003:comb_5|Q[11]      ; regout           ;
+; |time1|CNT_003:comb_5|Q[10]      ; |time1|CNT_003:comb_5|Q[10]      ; regout           ;
+; |time1|CNT_003:comb_5|Q[9]       ; |time1|CNT_003:comb_5|Q[9]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[8]       ; |time1|CNT_003:comb_5|Q[8]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[7]       ; |time1|CNT_003:comb_5|Q[7]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[6]       ; |time1|CNT_003:comb_5|Q[6]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[5]       ; |time1|CNT_003:comb_5|Q[5]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[4]       ; |time1|CNT_003:comb_5|Q[4]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[3]       ; |time1|CNT_003:comb_5|Q[3]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[2]       ; |time1|CNT_003:comb_5|Q[2]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[1]       ; |time1|CNT_003:comb_5|Q[1]       ; regout           ;
+; |time1|CNT_002:comb_4|Q[0]       ; |time1|CNT_002:comb_4|Q[0]       ; regout           ;
+; |time1|CNT_002:comb_4|Q~0        ; |time1|CNT_002:comb_4|Q~0        ; out              ;
+; |time1|CNT_002:comb_4|Q~1        ; |time1|CNT_002:comb_4|Q~1        ; out              ;
+; |time1|CNT_002:comb_4|Q~2        ; |time1|CNT_002:comb_4|Q~2        ; out              ;
+; |time1|CNT_002:comb_4|Q~3        ; |time1|CNT_002:comb_4|Q~3        ; out              ;
+; |time1|CNT_002:comb_4|Cout~0     ; |time1|CNT_002:comb_4|Cout~0     ; out              ;
+; |time1|CNT_002:comb_4|Cout~1     ; |time1|CNT_002:comb_4|Cout~1     ; out              ;
+; |time1|CNT_002:comb_4|Cout       ; |time1|CNT_002:comb_4|Cout       ; regout           ;
+; |time1|CNT_002:comb_4|Q[3]       ; |time1|CNT_002:comb_4|Q[3]       ; regout           ;
+; |time1|CNT_002:comb_4|Q[2]       ; |time1|CNT_002:comb_4|Q[2]       ; regout           ;
+; |time1|CNT_002:comb_4|Q[1]       ; |time1|CNT_002:comb_4|Q[1]       ; regout           ;
+; |time1|yima:comb_12|Decoder0~1   ; |time1|yima:comb_12|Decoder0~1   ; out              ;
+; |time1|yima:comb_12|Decoder0~2   ; |time1|yima:comb_12|Decoder0~2   ; out              ;
+; |time1|yima:comb_12|Decoder0~3   ; |time1|yima:comb_12|Decoder0~3   ; out              ;
+; |time1|yima:comb_12|Decoder0~4   ; |time1|yima:comb_12|Decoder0~4   ; out              ;
+; |time1|yima:comb_12|Decoder0~5   ; |time1|yima:comb_12|Decoder0~5   ; out              ;
+; |time1|yima:comb_12|Decoder0~6   ; |time1|yima:comb_12|Decoder0~6   ; out              ;
+; |time1|counter60:comb_11|Add0~0  ; |time1|counter60:comb_11|Add0~0  ; out0             ;
+; |time1|counter60:comb_11|Add0~1  ; |time1|counter60:comb_11|Add0~1  ; out0             ;
+; |time1|counter60:comb_11|Add0~2  ; |time1|counter60:comb_11|Add0~2  ; out0             ;
+; |time1|counter60:comb_11|Add0~3  ; |time1|counter60:comb_11|Add0~3  ; out0             ;
+; |time1|counter60:comb_11|Add0~4  ; |time1|counter60:comb_11|Add0~4  ; out0             ;
+; |time1|counter60:comb_11|Add0~5  ; |time1|counter60:comb_11|Add0~5  ; out0             ;
+; |time1|counter60:comb_11|Add0~6  ; |time1|counter60:comb_11|Add0~6  ; out0             ;
+; |time1|counter60:comb_6|Add0~0   ; |time1|counter60:comb_6|Add0~0   ; out0             ;
+; |time1|counter60:comb_6|Add0~1   ; |time1|counter60:comb_6|Add0~1   ; out0             ;
+; |time1|counter60:comb_6|Add0~2   ; |time1|counter60:comb_6|Add0~2   ; out0             ;
+; |time1|counter60:comb_6|Add0~3   ; |time1|counter60:comb_6|Add0~3   ; out0             ;
+; |time1|counter60:comb_6|Add0~4   ; |time1|counter60:comb_6|Add0~4   ; out0             ;
+; |time1|counter60:comb_6|Add0~5   ; |time1|counter60:comb_6|Add0~5   ; out0             ;
+; |time1|counter60:comb_6|Add0~6   ; |time1|counter60:comb_6|Add0~6   ; out0             ;
+; |time1|counter60:comb_6|Add0~7   ; |time1|counter60:comb_6|Add0~7   ; out0             ;
+; |time1|counter60:comb_6|Add0~8   ; |time1|counter60:comb_6|Add0~8   ; out0             ;
+; |time1|counter60:comb_6|Add0~9   ; |time1|counter60:comb_6|Add0~9   ; out0             ;
+; |time1|counter60:comb_6|Add0~10  ; |time1|counter60:comb_6|Add0~10  ; out0             ;
+; |time1|CNT_003:comb_5|Add0~0     ; |time1|CNT_003:comb_5|Add0~0     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~1     ; |time1|CNT_003:comb_5|Add0~1     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~2     ; |time1|CNT_003:comb_5|Add0~2     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~3     ; |time1|CNT_003:comb_5|Add0~3     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~4     ; |time1|CNT_003:comb_5|Add0~4     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~5     ; |time1|CNT_003:comb_5|Add0~5     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~6     ; |time1|CNT_003:comb_5|Add0~6     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~7     ; |time1|CNT_003:comb_5|Add0~7     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~8     ; |time1|CNT_003:comb_5|Add0~8     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~9     ; |time1|CNT_003:comb_5|Add0~9     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~10    ; |time1|CNT_003:comb_5|Add0~10    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~11    ; |time1|CNT_003:comb_5|Add0~11    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~12    ; |time1|CNT_003:comb_5|Add0~12    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~13    ; |time1|CNT_003:comb_5|Add0~13    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~14    ; |time1|CNT_003:comb_5|Add0~14    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~15    ; |time1|CNT_003:comb_5|Add0~15    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~16    ; |time1|CNT_003:comb_5|Add0~16    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~17    ; |time1|CNT_003:comb_5|Add0~17    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~18    ; |time1|CNT_003:comb_5|Add0~18    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~19    ; |time1|CNT_003:comb_5|Add0~19    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~20    ; |time1|CNT_003:comb_5|Add0~20    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~21    ; |time1|CNT_003:comb_5|Add0~21    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~22    ; |time1|CNT_003:comb_5|Add0~22    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~23    ; |time1|CNT_003:comb_5|Add0~23    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~24    ; |time1|CNT_003:comb_5|Add0~24    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~25    ; |time1|CNT_003:comb_5|Add0~25    ; out0             ;
+; |time1|CNT_003:comb_5|Add0~26    ; |time1|CNT_003:comb_5|Add0~26    ; out0             ;
+; |time1|CNT_002:comb_4|Add0~0     ; |time1|CNT_002:comb_4|Add0~0     ; out0             ;
+; |time1|CNT_002:comb_4|Add0~1     ; |time1|CNT_002:comb_4|Add0~1     ; out0             ;
+; |time1|CNT_002:comb_4|Add0~2     ; |time1|CNT_002:comb_4|Add0~2     ; out0             ;
+; |time1|CNT_002:comb_4|Add0~3     ; |time1|CNT_002:comb_4|Add0~3     ; out0             ;
+; |time1|CNT_002:comb_4|Add0~4     ; |time1|CNT_002:comb_4|Add0~4     ; out0             ;
+; |time1|counter60:comb_6|Equal0~0 ; |time1|counter60:comb_6|Equal0~0 ; out0             ;
+; |time1|counter60:comb_6|Equal1~0 ; |time1|counter60:comb_6|Equal1~0 ; out0             ;
+; |time1|counter60:comb_6|Equal2~0 ; |time1|counter60:comb_6|Equal2~0 ; out0             ;
+; |time1|counter60:comb_6|Equal3~0 ; |time1|counter60:comb_6|Equal3~0 ; out0             ;
+; |time1|counter60:comb_6|Equal4~0 ; |time1|counter60:comb_6|Equal4~0 ; out0             ;
+; |time1|counter60:comb_6|Equal5~0 ; |time1|counter60:comb_6|Equal5~0 ; out0             ;
+; |time1|CNT_002:comb_4|Equal0~0   ; |time1|CNT_002:comb_4|Equal0~0   ; out0             ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |time1|Cs1~0                      ; |time1|Cs1~0                      ; out0             ;
+; |time1|CF1~0                      ; |time1|CF1~0                      ; out0             ;
+; |time1|CF1                        ; |time1|CF1                        ; out0             ;
+; |time1|rst                        ; |time1|rst                        ; out              ;
+; |time1|EN                         ; |time1|EN                         ; out              ;
+; |time1|q22[0]                     ; |time1|q22[0]                     ; pin_out          ;
+; |time1|q22[1]                     ; |time1|q22[1]                     ; pin_out          ;
+; |time1|q22[2]                     ; |time1|q22[2]                     ; pin_out          ;
+; |time1|q22[3]                     ; |time1|q22[3]                     ; pin_out          ;
+; |time1|q22[4]                     ; |time1|q22[4]                     ; pin_out          ;
+; |time1|q22[5]                     ; |time1|q22[5]                     ; pin_out          ;
+; |time1|q22[6]                     ; |time1|q22[6]                     ; pin_out          ;
+; |time1|q31[0]                     ; |time1|q31[0]                     ; pin_out          ;
+; |time1|q31[1]                     ; |time1|q31[1]                     ; pin_out          ;
+; |time1|q31[2]                     ; |time1|q31[2]                     ; pin_out          ;
+; |time1|q31[3]                     ; |time1|q31[3]                     ; pin_out          ;
+; |time1|q31[4]                     ; |time1|q31[4]                     ; pin_out          ;
+; |time1|q31[5]                     ; |time1|q31[5]                     ; pin_out          ;
+; |time1|q31[6]                     ; |time1|q31[6]                     ; pin_out          ;
+; |time1|q32[0]                     ; |time1|q32[0]                     ; pin_out          ;
+; |time1|q32[1]                     ; |time1|q32[1]                     ; pin_out          ;
+; |time1|q32[2]                     ; |time1|q32[2]                     ; pin_out          ;
+; |time1|q32[3]                     ; |time1|q32[3]                     ; pin_out          ;
+; |time1|q32[4]                     ; |time1|q32[4]                     ; pin_out          ;
+; |time1|q32[5]                     ; |time1|q32[5]                     ; pin_out          ;
+; |time1|q32[6]                     ; |time1|q32[6]                     ; pin_out          ;
+; |time1|Cout                       ; |time1|Cout                       ; pin_out          ;
+; |time1|FI                         ; |time1|FI                         ; out              ;
+; |time1|SI                         ; |time1|SI                         ; out              ;
+; |time1|yima:comb_17|WideOr0       ; |time1|yima:comb_17|WideOr0       ; out0             ;
+; |time1|yima:comb_17|WideOr1       ; |time1|yima:comb_17|WideOr1       ; out0             ;
+; |time1|yima:comb_17|WideOr2       ; |time1|yima:comb_17|WideOr2       ; out0             ;
+; |time1|yima:comb_17|WideOr3       ; |time1|yima:comb_17|WideOr3       ; out0             ;
+; |time1|yima:comb_17|WideOr4       ; |time1|yima:comb_17|WideOr4       ; out0             ;
+; |time1|yima:comb_17|WideOr5       ; |time1|yima:comb_17|WideOr5       ; out0             ;
+; |time1|yima:comb_17|WideOr6       ; |time1|yima:comb_17|WideOr6       ; out0             ;
+; |time1|yima:comb_17|WideOr7       ; |time1|yima:comb_17|WideOr7       ; out0             ;
+; |time1|yima:comb_17|WideOr8       ; |time1|yima:comb_17|WideOr8       ; out0             ;
+; |time1|yima:comb_17|WideOr9       ; |time1|yima:comb_17|WideOr9       ; out0             ;
+; |time1|yima:comb_17|WideOr10      ; |time1|yima:comb_17|WideOr10      ; out0             ;
+; |time1|yima:comb_17|WideOr11      ; |time1|yima:comb_17|WideOr11      ; out0             ;
+; |time1|yima:comb_17|WideOr12      ; |time1|yima:comb_17|WideOr12      ; out0             ;
+; |time1|yima:comb_17|WideOr13      ; |time1|yima:comb_17|WideOr13      ; out0             ;
+; |time1|counter24:comb_16|Cout     ; |time1|counter24:comb_16|Cout     ; regout           ;
+; |time1|counter24:comb_16|Q~0      ; |time1|counter24:comb_16|Q~0      ; out              ;
+; |time1|counter24:comb_16|Q~1      ; |time1|counter24:comb_16|Q~1      ; out              ;
+; |time1|counter24:comb_16|Q~2      ; |time1|counter24:comb_16|Q~2      ; out              ;
+; |time1|counter24:comb_16|Q~3      ; |time1|counter24:comb_16|Q~3      ; out              ;
+; |time1|counter24:comb_16|Q~4      ; |time1|counter24:comb_16|Q~4      ; out              ;
+; |time1|counter24:comb_16|Q~5      ; |time1|counter24:comb_16|Q~5      ; out              ;
+; |time1|counter24:comb_16|Q~6      ; |time1|counter24:comb_16|Q~6      ; out              ;
+; |time1|counter24:comb_16|Q~7      ; |time1|counter24:comb_16|Q~7      ; out              ;
+; |time1|counter24:comb_16|Q~8      ; |time1|counter24:comb_16|Q~8      ; out              ;
+; |time1|counter24:comb_16|Q~9      ; |time1|counter24:comb_16|Q~9      ; out              ;
+; |time1|counter24:comb_16|Q~10     ; |time1|counter24:comb_16|Q~10     ; out              ;
+; |time1|counter24:comb_16|Q~11     ; |time1|counter24:comb_16|Q~11     ; out              ;
+; |time1|counter24:comb_16|Q~12     ; |time1|counter24:comb_16|Q~12     ; out              ;
+; |time1|counter24:comb_16|Q~13     ; |time1|counter24:comb_16|Q~13     ; out              ;
+; |time1|counter24:comb_16|Q~14     ; |time1|counter24:comb_16|Q~14     ; out              ;
+; |time1|counter24:comb_16|Q~15     ; |time1|counter24:comb_16|Q~15     ; out              ;
+; |time1|counter24:comb_16|Q~16     ; |time1|counter24:comb_16|Q~16     ; out              ;
+; |time1|counter24:comb_16|Q~17     ; |time1|counter24:comb_16|Q~17     ; out              ;
+; |time1|counter24:comb_16|Q~18     ; |time1|counter24:comb_16|Q~18     ; out              ;
+; |time1|counter24:comb_16|Q~19     ; |time1|counter24:comb_16|Q~19     ; out              ;
+; |time1|counter24:comb_16|Q~20     ; |time1|counter24:comb_16|Q~20     ; out              ;
+; |time1|counter24:comb_16|Q~21     ; |time1|counter24:comb_16|Q~21     ; out              ;
+; |time1|counter24:comb_16|Q~22     ; |time1|counter24:comb_16|Q~22     ; out              ;
+; |time1|counter24:comb_16|Q~23     ; |time1|counter24:comb_16|Q~23     ; out              ;
+; |time1|counter24:comb_16|Cout~0   ; |time1|counter24:comb_16|Cout~0   ; out              ;
+; |time1|counter24:comb_16|Q[7]     ; |time1|counter24:comb_16|Q[7]     ; regout           ;
+; |time1|counter24:comb_16|Q[6]     ; |time1|counter24:comb_16|Q[6]     ; regout           ;
+; |time1|counter24:comb_16|Q[5]     ; |time1|counter24:comb_16|Q[5]     ; regout           ;
+; |time1|counter24:comb_16|Q[4]     ; |time1|counter24:comb_16|Q[4]     ; regout           ;
+; |time1|counter24:comb_16|Q[3]     ; |time1|counter24:comb_16|Q[3]     ; regout           ;
+; |time1|counter24:comb_16|Q[2]     ; |time1|counter24:comb_16|Q[2]     ; regout           ;
+; |time1|counter24:comb_16|Q[1]     ; |time1|counter24:comb_16|Q[1]     ; regout           ;
+; |time1|counter24:comb_16|Q[0]     ; |time1|counter24:comb_16|Q[0]     ; regout           ;
+; |time1|yima:comb_12|WideOr7       ; |time1|yima:comb_12|WideOr7       ; out0             ;
+; |time1|yima:comb_12|WideOr8       ; |time1|yima:comb_12|WideOr8       ; out0             ;
+; |time1|yima:comb_12|WideOr9       ; |time1|yima:comb_12|WideOr9       ; out0             ;
+; |time1|yima:comb_12|WideOr10      ; |time1|yima:comb_12|WideOr10      ; out0             ;
+; |time1|yima:comb_12|WideOr11      ; |time1|yima:comb_12|WideOr11      ; out0             ;
+; |time1|yima:comb_12|WideOr12      ; |time1|yima:comb_12|WideOr12      ; out0             ;
+; |time1|yima:comb_12|WideOr13      ; |time1|yima:comb_12|WideOr13      ; out0             ;
+; |time1|counter60:comb_11|Cout     ; |time1|counter60:comb_11|Cout     ; regout           ;
+; |time1|counter60:comb_11|Q~0      ; |time1|counter60:comb_11|Q~0      ; out              ;
+; |time1|counter60:comb_11|Q~1      ; |time1|counter60:comb_11|Q~1      ; out              ;
+; |time1|counter60:comb_11|Q~2      ; |time1|counter60:comb_11|Q~2      ; out              ;
+; |time1|counter60:comb_11|Q~8      ; |time1|counter60:comb_11|Q~8      ; out              ;
+; |time1|counter60:comb_11|Q~9      ; |time1|counter60:comb_11|Q~9      ; out              ;
+; |time1|counter60:comb_11|Q~10     ; |time1|counter60:comb_11|Q~10     ; out              ;
+; |time1|counter60:comb_11|Q~16     ; |time1|counter60:comb_11|Q~16     ; out              ;
+; |time1|counter60:comb_11|Q~17     ; |time1|counter60:comb_11|Q~17     ; out              ;
+; |time1|counter60:comb_11|Q~18     ; |time1|counter60:comb_11|Q~18     ; out              ;
+; |time1|counter60:comb_11|Q~24     ; |time1|counter60:comb_11|Q~24     ; out              ;
+; |time1|counter60:comb_11|Q~25     ; |time1|counter60:comb_11|Q~25     ; out              ;
+; |time1|counter60:comb_11|Q~26     ; |time1|counter60:comb_11|Q~26     ; out              ;
+; |time1|counter60:comb_11|Q~32     ; |time1|counter60:comb_11|Q~32     ; out              ;
+; |time1|counter60:comb_11|Q~33     ; |time1|counter60:comb_11|Q~33     ; out              ;
+; |time1|counter60:comb_11|Q~34     ; |time1|counter60:comb_11|Q~34     ; out              ;
+; |time1|counter60:comb_11|Q~40     ; |time1|counter60:comb_11|Q~40     ; out              ;
+; |time1|counter60:comb_11|Q~41     ; |time1|counter60:comb_11|Q~41     ; out              ;
+; |time1|counter60:comb_11|Q~42     ; |time1|counter60:comb_11|Q~42     ; out              ;
+; |time1|counter60:comb_11|Cout~0   ; |time1|counter60:comb_11|Cout~0   ; out              ;
+; |time1|counter60:comb_11|Q[7]     ; |time1|counter60:comb_11|Q[7]     ; regout           ;
+; |time1|counter60:comb_11|Q[6]     ; |time1|counter60:comb_11|Q[6]     ; regout           ;
+; |time1|counter60:comb_11|Q[5]     ; |time1|counter60:comb_11|Q[5]     ; regout           ;
+; |time1|counter60:comb_11|Q[4]     ; |time1|counter60:comb_11|Q[4]     ; regout           ;
+; |time1|counter60:comb_6|Q~0       ; |time1|counter60:comb_6|Q~0       ; out              ;
+; |time1|counter60:comb_6|Q~8       ; |time1|counter60:comb_6|Q~8       ; out              ;
+; |time1|counter60:comb_6|Q~16      ; |time1|counter60:comb_6|Q~16      ; out              ;
+; |time1|counter60:comb_6|Q~24      ; |time1|counter60:comb_6|Q~24      ; out              ;
+; |time1|counter60:comb_6|Q~32      ; |time1|counter60:comb_6|Q~32      ; out              ;
+; |time1|counter60:comb_6|Q~40      ; |time1|counter60:comb_6|Q~40      ; out              ;
+; |time1|counter60:comb_6|Q[7]      ; |time1|counter60:comb_6|Q[7]      ; regout           ;
+; |time1|CNT_003:comb_5|Q~0         ; |time1|CNT_003:comb_5|Q~0         ; out              ;
+; |time1|CNT_003:comb_5|Q~1         ; |time1|CNT_003:comb_5|Q~1         ; out              ;
+; |time1|CNT_003:comb_5|Q~2         ; |time1|CNT_003:comb_5|Q~2         ; out              ;
+; |time1|CNT_003:comb_5|Q~3         ; |time1|CNT_003:comb_5|Q~3         ; out              ;
+; |time1|CNT_003:comb_5|Q~4         ; |time1|CNT_003:comb_5|Q~4         ; out              ;
+; |time1|CNT_003:comb_5|Q~5         ; |time1|CNT_003:comb_5|Q~5         ; out              ;
+; |time1|CNT_003:comb_5|Q~6         ; |time1|CNT_003:comb_5|Q~6         ; out              ;
+; |time1|CNT_003:comb_5|Q~7         ; |time1|CNT_003:comb_5|Q~7         ; out              ;
+; |time1|CNT_003:comb_5|Q~8         ; |time1|CNT_003:comb_5|Q~8         ; out              ;
+; |time1|CNT_003:comb_5|Cout~0      ; |time1|CNT_003:comb_5|Cout~0      ; out              ;
+; |time1|CNT_003:comb_5|Cout~1      ; |time1|CNT_003:comb_5|Cout~1      ; out              ;
+; |time1|CNT_003:comb_5|Cout        ; |time1|CNT_003:comb_5|Cout        ; regout           ;
+; |time1|CNT_003:comb_5|Q[23]       ; |time1|CNT_003:comb_5|Q[23]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[22]       ; |time1|CNT_003:comb_5|Q[22]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[21]       ; |time1|CNT_003:comb_5|Q[21]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[20]       ; |time1|CNT_003:comb_5|Q[20]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[19]       ; |time1|CNT_003:comb_5|Q[19]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[18]       ; |time1|CNT_003:comb_5|Q[18]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[17]       ; |time1|CNT_003:comb_5|Q[17]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[16]       ; |time1|CNT_003:comb_5|Q[16]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[15]       ; |time1|CNT_003:comb_5|Q[15]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[14]       ; |time1|CNT_003:comb_5|Q[14]       ; regout           ;
+; |time1|yima:comb_17|Decoder0~0    ; |time1|yima:comb_17|Decoder0~0    ; out              ;
+; |time1|yima:comb_17|Decoder0~1    ; |time1|yima:comb_17|Decoder0~1    ; out              ;
+; |time1|yima:comb_17|Decoder0~2    ; |time1|yima:comb_17|Decoder0~2    ; out              ;
+; |time1|yima:comb_17|Decoder0~3    ; |time1|yima:comb_17|Decoder0~3    ; out              ;
+; |time1|yima:comb_17|Decoder0~4    ; |time1|yima:comb_17|Decoder0~4    ; out              ;
+; |time1|yima:comb_17|Decoder0~5    ; |time1|yima:comb_17|Decoder0~5    ; out              ;
+; |time1|yima:comb_17|Decoder0~6    ; |time1|yima:comb_17|Decoder0~6    ; out              ;
+; |time1|yima:comb_17|Decoder0~7    ; |time1|yima:comb_17|Decoder0~7    ; out              ;
+; |time1|yima:comb_17|Decoder0~8    ; |time1|yima:comb_17|Decoder0~8    ; out              ;
+; |time1|yima:comb_17|Decoder0~9    ; |time1|yima:comb_17|Decoder0~9    ; out              ;
+; |time1|yima:comb_17|Decoder0~10   ; |time1|yima:comb_17|Decoder0~10   ; out              ;
+; |time1|yima:comb_17|Decoder0~11   ; |time1|yima:comb_17|Decoder0~11   ; out              ;
+; |time1|yima:comb_17|Decoder0~12   ; |time1|yima:comb_17|Decoder0~12   ; out              ;
+; |time1|yima:comb_17|Decoder0~13   ; |time1|yima:comb_17|Decoder0~13   ; out              ;
+; |time1|yima:comb_17|Decoder0~14   ; |time1|yima:comb_17|Decoder0~14   ; out              ;
+; |time1|yima:comb_17|Decoder1~0    ; |time1|yima:comb_17|Decoder1~0    ; out              ;
+; |time1|yima:comb_17|Decoder1~1    ; |time1|yima:comb_17|Decoder1~1    ; out              ;
+; |time1|yima:comb_17|Decoder1~2    ; |time1|yima:comb_17|Decoder1~2    ; out              ;
+; |time1|yima:comb_17|Decoder1~3    ; |time1|yima:comb_17|Decoder1~3    ; out              ;
+; |time1|yima:comb_17|Decoder1~4    ; |time1|yima:comb_17|Decoder1~4    ; out              ;
+; |time1|yima:comb_17|Decoder1~5    ; |time1|yima:comb_17|Decoder1~5    ; out              ;
+; |time1|yima:comb_17|Decoder1~6    ; |time1|yima:comb_17|Decoder1~6    ; out              ;
+; |time1|yima:comb_17|Decoder1~7    ; |time1|yima:comb_17|Decoder1~7    ; out              ;
+; |time1|yima:comb_17|Decoder1~8    ; |time1|yima:comb_17|Decoder1~8    ; out              ;
+; |time1|yima:comb_17|Decoder1~9    ; |time1|yima:comb_17|Decoder1~9    ; out              ;
+; |time1|yima:comb_17|Decoder1~10   ; |time1|yima:comb_17|Decoder1~10   ; out              ;
+; |time1|yima:comb_17|Decoder1~11   ; |time1|yima:comb_17|Decoder1~11   ; out              ;
+; |time1|yima:comb_17|Decoder1~12   ; |time1|yima:comb_17|Decoder1~12   ; out              ;
+; |time1|yima:comb_17|Decoder1~13   ; |time1|yima:comb_17|Decoder1~13   ; out              ;
+; |time1|yima:comb_17|Decoder1~14   ; |time1|yima:comb_17|Decoder1~14   ; out              ;
+; |time1|yima:comb_12|Decoder0~0    ; |time1|yima:comb_12|Decoder0~0    ; out              ;
+; |time1|yima:comb_12|Decoder0~8    ; |time1|yima:comb_12|Decoder0~8    ; out              ;
+; |time1|yima:comb_12|Decoder0~9    ; |time1|yima:comb_12|Decoder0~9    ; out              ;
+; |time1|yima:comb_12|Decoder0~10   ; |time1|yima:comb_12|Decoder0~10   ; out              ;
+; |time1|yima:comb_12|Decoder0~11   ; |time1|yima:comb_12|Decoder0~11   ; out              ;
+; |time1|yima:comb_12|Decoder0~12   ; |time1|yima:comb_12|Decoder0~12   ; out              ;
+; |time1|yima:comb_12|Decoder0~13   ; |time1|yima:comb_12|Decoder0~13   ; out              ;
+; |time1|yima:comb_12|Decoder0~14   ; |time1|yima:comb_12|Decoder0~14   ; out              ;
+; |time1|yima:comb_12|Decoder1~0    ; |time1|yima:comb_12|Decoder1~0    ; out              ;
+; |time1|yima:comb_12|Decoder1~1    ; |time1|yima:comb_12|Decoder1~1    ; out              ;
+; |time1|yima:comb_12|Decoder1~2    ; |time1|yima:comb_12|Decoder1~2    ; out              ;
+; |time1|yima:comb_12|Decoder1~3    ; |time1|yima:comb_12|Decoder1~3    ; out              ;
+; |time1|yima:comb_12|Decoder1~4    ; |time1|yima:comb_12|Decoder1~4    ; out              ;
+; |time1|yima:comb_12|Decoder1~5    ; |time1|yima:comb_12|Decoder1~5    ; out              ;
+; |time1|yima:comb_12|Decoder1~6    ; |time1|yima:comb_12|Decoder1~6    ; out              ;
+; |time1|yima:comb_12|Decoder1~7    ; |time1|yima:comb_12|Decoder1~7    ; out              ;
+; |time1|yima:comb_12|Decoder1~8    ; |time1|yima:comb_12|Decoder1~8    ; out              ;
+; |time1|yima:comb_12|Decoder1~9    ; |time1|yima:comb_12|Decoder1~9    ; out              ;
+; |time1|yima:comb_12|Decoder1~10   ; |time1|yima:comb_12|Decoder1~10   ; out              ;
+; |time1|yima:comb_12|Decoder1~11   ; |time1|yima:comb_12|Decoder1~11   ; out              ;
+; |time1|yima:comb_12|Decoder1~12   ; |time1|yima:comb_12|Decoder1~12   ; out              ;
+; |time1|yima:comb_12|Decoder1~13   ; |time1|yima:comb_12|Decoder1~13   ; out              ;
+; |time1|yima:comb_12|Decoder1~14   ; |time1|yima:comb_12|Decoder1~14   ; out              ;
+; |time1|counter24:comb_16|Add0~0   ; |time1|counter24:comb_16|Add0~0   ; out0             ;
+; |time1|counter24:comb_16|Add0~1   ; |time1|counter24:comb_16|Add0~1   ; out0             ;
+; |time1|counter24:comb_16|Add0~2   ; |time1|counter24:comb_16|Add0~2   ; out0             ;
+; |time1|counter24:comb_16|Add0~3   ; |time1|counter24:comb_16|Add0~3   ; out0             ;
+; |time1|counter24:comb_16|Add0~4   ; |time1|counter24:comb_16|Add0~4   ; out0             ;
+; |time1|counter24:comb_16|Add0~5   ; |time1|counter24:comb_16|Add0~5   ; out0             ;
+; |time1|counter24:comb_16|Add0~6   ; |time1|counter24:comb_16|Add0~6   ; out0             ;
+; |time1|counter24:comb_16|Add0~7   ; |time1|counter24:comb_16|Add0~7   ; out0             ;
+; |time1|counter24:comb_16|Add0~8   ; |time1|counter24:comb_16|Add0~8   ; out0             ;
+; |time1|counter24:comb_16|Add0~9   ; |time1|counter24:comb_16|Add0~9   ; out0             ;
+; |time1|counter24:comb_16|Add0~10  ; |time1|counter24:comb_16|Add0~10  ; out0             ;
+; |time1|counter24:comb_16|Add0~11  ; |time1|counter24:comb_16|Add0~11  ; out0             ;
+; |time1|counter24:comb_16|Add0~12  ; |time1|counter24:comb_16|Add0~12  ; out0             ;
+; |time1|counter60:comb_11|Add0~7   ; |time1|counter60:comb_11|Add0~7   ; out0             ;
+; |time1|counter60:comb_11|Add0~8   ; |time1|counter60:comb_11|Add0~8   ; out0             ;
+; |time1|counter60:comb_11|Add0~9   ; |time1|counter60:comb_11|Add0~9   ; out0             ;
+; |time1|counter60:comb_11|Add0~10  ; |time1|counter60:comb_11|Add0~10  ; out0             ;
+; |time1|counter60:comb_11|Add0~11  ; |time1|counter60:comb_11|Add0~11  ; out0             ;
+; |time1|counter60:comb_11|Add0~12  ; |time1|counter60:comb_11|Add0~12  ; out0             ;
+; |time1|counter60:comb_6|Add0~11   ; |time1|counter60:comb_6|Add0~11   ; out0             ;
+; |time1|counter60:comb_6|Add0~12   ; |time1|counter60:comb_6|Add0~12   ; out0             ;
+; |time1|CNT_003:comb_5|Add0~27     ; |time1|CNT_003:comb_5|Add0~27     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~28     ; |time1|CNT_003:comb_5|Add0~28     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~29     ; |time1|CNT_003:comb_5|Add0~29     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~30     ; |time1|CNT_003:comb_5|Add0~30     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~31     ; |time1|CNT_003:comb_5|Add0~31     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~32     ; |time1|CNT_003:comb_5|Add0~32     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~33     ; |time1|CNT_003:comb_5|Add0~33     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~34     ; |time1|CNT_003:comb_5|Add0~34     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~35     ; |time1|CNT_003:comb_5|Add0~35     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~36     ; |time1|CNT_003:comb_5|Add0~36     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~37     ; |time1|CNT_003:comb_5|Add0~37     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~38     ; |time1|CNT_003:comb_5|Add0~38     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~39     ; |time1|CNT_003:comb_5|Add0~39     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~40     ; |time1|CNT_003:comb_5|Add0~40     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~41     ; |time1|CNT_003:comb_5|Add0~41     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~42     ; |time1|CNT_003:comb_5|Add0~42     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~43     ; |time1|CNT_003:comb_5|Add0~43     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~44     ; |time1|CNT_003:comb_5|Add0~44     ; out0             ;
+; |time1|counter24:comb_16|Equal0~0 ; |time1|counter24:comb_16|Equal0~0 ; out0             ;
+; |time1|counter24:comb_16|Equal1~0 ; |time1|counter24:comb_16|Equal1~0 ; out0             ;
+; |time1|counter24:comb_16|Equal2~0 ; |time1|counter24:comb_16|Equal2~0 ; out0             ;
+; |time1|counter60:comb_11|Equal0~0 ; |time1|counter60:comb_11|Equal0~0 ; out0             ;
+; |time1|counter60:comb_11|Equal1~0 ; |time1|counter60:comb_11|Equal1~0 ; out0             ;
+; |time1|counter60:comb_11|Equal2~0 ; |time1|counter60:comb_11|Equal2~0 ; out0             ;
+; |time1|counter60:comb_11|Equal3~0 ; |time1|counter60:comb_11|Equal3~0 ; out0             ;
+; |time1|counter60:comb_11|Equal4~0 ; |time1|counter60:comb_11|Equal4~0 ; out0             ;
+; |time1|counter60:comb_11|Equal5~0 ; |time1|counter60:comb_11|Equal5~0 ; out0             ;
+; |time1|CNT_003:comb_5|Equal0~0    ; |time1|CNT_003:comb_5|Equal0~0    ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |time1|Cs1~0                      ; |time1|Cs1~0                      ; out0             ;
+; |time1|CF1~0                      ; |time1|CF1~0                      ; out0             ;
+; |time1|CF1                        ; |time1|CF1                        ; out0             ;
+; |time1|rst                        ; |time1|rst                        ; out              ;
+; |time1|EN                         ; |time1|EN                         ; out              ;
+; |time1|q22[0]                     ; |time1|q22[0]                     ; pin_out          ;
+; |time1|q22[1]                     ; |time1|q22[1]                     ; pin_out          ;
+; |time1|q22[2]                     ; |time1|q22[2]                     ; pin_out          ;
+; |time1|q22[3]                     ; |time1|q22[3]                     ; pin_out          ;
+; |time1|q22[4]                     ; |time1|q22[4]                     ; pin_out          ;
+; |time1|q22[5]                     ; |time1|q22[5]                     ; pin_out          ;
+; |time1|q22[6]                     ; |time1|q22[6]                     ; pin_out          ;
+; |time1|q31[0]                     ; |time1|q31[0]                     ; pin_out          ;
+; |time1|q31[1]                     ; |time1|q31[1]                     ; pin_out          ;
+; |time1|q31[2]                     ; |time1|q31[2]                     ; pin_out          ;
+; |time1|q31[3]                     ; |time1|q31[3]                     ; pin_out          ;
+; |time1|q31[4]                     ; |time1|q31[4]                     ; pin_out          ;
+; |time1|q31[5]                     ; |time1|q31[5]                     ; pin_out          ;
+; |time1|q31[6]                     ; |time1|q31[6]                     ; pin_out          ;
+; |time1|q32[0]                     ; |time1|q32[0]                     ; pin_out          ;
+; |time1|q32[1]                     ; |time1|q32[1]                     ; pin_out          ;
+; |time1|q32[2]                     ; |time1|q32[2]                     ; pin_out          ;
+; |time1|q32[3]                     ; |time1|q32[3]                     ; pin_out          ;
+; |time1|q32[4]                     ; |time1|q32[4]                     ; pin_out          ;
+; |time1|q32[5]                     ; |time1|q32[5]                     ; pin_out          ;
+; |time1|q32[6]                     ; |time1|q32[6]                     ; pin_out          ;
+; |time1|Cout                       ; |time1|Cout                       ; pin_out          ;
+; |time1|FI                         ; |time1|FI                         ; out              ;
+; |time1|SI                         ; |time1|SI                         ; out              ;
+; |time1|yima:comb_17|WideOr0       ; |time1|yima:comb_17|WideOr0       ; out0             ;
+; |time1|yima:comb_17|WideOr1       ; |time1|yima:comb_17|WideOr1       ; out0             ;
+; |time1|yima:comb_17|WideOr2       ; |time1|yima:comb_17|WideOr2       ; out0             ;
+; |time1|yima:comb_17|WideOr3       ; |time1|yima:comb_17|WideOr3       ; out0             ;
+; |time1|yima:comb_17|WideOr4       ; |time1|yima:comb_17|WideOr4       ; out0             ;
+; |time1|yima:comb_17|WideOr5       ; |time1|yima:comb_17|WideOr5       ; out0             ;
+; |time1|yima:comb_17|WideOr6       ; |time1|yima:comb_17|WideOr6       ; out0             ;
+; |time1|yima:comb_17|WideOr7       ; |time1|yima:comb_17|WideOr7       ; out0             ;
+; |time1|yima:comb_17|WideOr8       ; |time1|yima:comb_17|WideOr8       ; out0             ;
+; |time1|yima:comb_17|WideOr9       ; |time1|yima:comb_17|WideOr9       ; out0             ;
+; |time1|yima:comb_17|WideOr10      ; |time1|yima:comb_17|WideOr10      ; out0             ;
+; |time1|yima:comb_17|WideOr11      ; |time1|yima:comb_17|WideOr11      ; out0             ;
+; |time1|yima:comb_17|WideOr12      ; |time1|yima:comb_17|WideOr12      ; out0             ;
+; |time1|yima:comb_17|WideOr13      ; |time1|yima:comb_17|WideOr13      ; out0             ;
+; |time1|counter24:comb_16|Cout     ; |time1|counter24:comb_16|Cout     ; regout           ;
+; |time1|counter24:comb_16|Q~0      ; |time1|counter24:comb_16|Q~0      ; out              ;
+; |time1|counter24:comb_16|Q~1      ; |time1|counter24:comb_16|Q~1      ; out              ;
+; |time1|counter24:comb_16|Q~2      ; |time1|counter24:comb_16|Q~2      ; out              ;
+; |time1|counter24:comb_16|Q~3      ; |time1|counter24:comb_16|Q~3      ; out              ;
+; |time1|counter24:comb_16|Q~4      ; |time1|counter24:comb_16|Q~4      ; out              ;
+; |time1|counter24:comb_16|Q~5      ; |time1|counter24:comb_16|Q~5      ; out              ;
+; |time1|counter24:comb_16|Q~6      ; |time1|counter24:comb_16|Q~6      ; out              ;
+; |time1|counter24:comb_16|Q~7      ; |time1|counter24:comb_16|Q~7      ; out              ;
+; |time1|counter24:comb_16|Q~8      ; |time1|counter24:comb_16|Q~8      ; out              ;
+; |time1|counter24:comb_16|Q~9      ; |time1|counter24:comb_16|Q~9      ; out              ;
+; |time1|counter24:comb_16|Q~10     ; |time1|counter24:comb_16|Q~10     ; out              ;
+; |time1|counter24:comb_16|Q~11     ; |time1|counter24:comb_16|Q~11     ; out              ;
+; |time1|counter24:comb_16|Q~12     ; |time1|counter24:comb_16|Q~12     ; out              ;
+; |time1|counter24:comb_16|Q~13     ; |time1|counter24:comb_16|Q~13     ; out              ;
+; |time1|counter24:comb_16|Q~14     ; |time1|counter24:comb_16|Q~14     ; out              ;
+; |time1|counter24:comb_16|Q~15     ; |time1|counter24:comb_16|Q~15     ; out              ;
+; |time1|counter24:comb_16|Q~16     ; |time1|counter24:comb_16|Q~16     ; out              ;
+; |time1|counter24:comb_16|Q~17     ; |time1|counter24:comb_16|Q~17     ; out              ;
+; |time1|counter24:comb_16|Q~18     ; |time1|counter24:comb_16|Q~18     ; out              ;
+; |time1|counter24:comb_16|Q~19     ; |time1|counter24:comb_16|Q~19     ; out              ;
+; |time1|counter24:comb_16|Q~20     ; |time1|counter24:comb_16|Q~20     ; out              ;
+; |time1|counter24:comb_16|Q~21     ; |time1|counter24:comb_16|Q~21     ; out              ;
+; |time1|counter24:comb_16|Q~22     ; |time1|counter24:comb_16|Q~22     ; out              ;
+; |time1|counter24:comb_16|Q~23     ; |time1|counter24:comb_16|Q~23     ; out              ;
+; |time1|counter24:comb_16|Cout~0   ; |time1|counter24:comb_16|Cout~0   ; out              ;
+; |time1|counter24:comb_16|Q[7]     ; |time1|counter24:comb_16|Q[7]     ; regout           ;
+; |time1|counter24:comb_16|Q[6]     ; |time1|counter24:comb_16|Q[6]     ; regout           ;
+; |time1|counter24:comb_16|Q[5]     ; |time1|counter24:comb_16|Q[5]     ; regout           ;
+; |time1|counter24:comb_16|Q[4]     ; |time1|counter24:comb_16|Q[4]     ; regout           ;
+; |time1|counter24:comb_16|Q[3]     ; |time1|counter24:comb_16|Q[3]     ; regout           ;
+; |time1|counter24:comb_16|Q[2]     ; |time1|counter24:comb_16|Q[2]     ; regout           ;
+; |time1|counter24:comb_16|Q[1]     ; |time1|counter24:comb_16|Q[1]     ; regout           ;
+; |time1|counter24:comb_16|Q[0]     ; |time1|counter24:comb_16|Q[0]     ; regout           ;
+; |time1|yima:comb_12|WideOr7       ; |time1|yima:comb_12|WideOr7       ; out0             ;
+; |time1|yima:comb_12|WideOr8       ; |time1|yima:comb_12|WideOr8       ; out0             ;
+; |time1|yima:comb_12|WideOr9       ; |time1|yima:comb_12|WideOr9       ; out0             ;
+; |time1|yima:comb_12|WideOr10      ; |time1|yima:comb_12|WideOr10      ; out0             ;
+; |time1|yima:comb_12|WideOr11      ; |time1|yima:comb_12|WideOr11      ; out0             ;
+; |time1|yima:comb_12|WideOr12      ; |time1|yima:comb_12|WideOr12      ; out0             ;
+; |time1|yima:comb_12|WideOr13      ; |time1|yima:comb_12|WideOr13      ; out0             ;
+; |time1|counter60:comb_11|Cout     ; |time1|counter60:comb_11|Cout     ; regout           ;
+; |time1|counter60:comb_11|Q~0      ; |time1|counter60:comb_11|Q~0      ; out              ;
+; |time1|counter60:comb_11|Q~1      ; |time1|counter60:comb_11|Q~1      ; out              ;
+; |time1|counter60:comb_11|Q~2      ; |time1|counter60:comb_11|Q~2      ; out              ;
+; |time1|counter60:comb_11|Q~8      ; |time1|counter60:comb_11|Q~8      ; out              ;
+; |time1|counter60:comb_11|Q~9      ; |time1|counter60:comb_11|Q~9      ; out              ;
+; |time1|counter60:comb_11|Q~10     ; |time1|counter60:comb_11|Q~10     ; out              ;
+; |time1|counter60:comb_11|Q~16     ; |time1|counter60:comb_11|Q~16     ; out              ;
+; |time1|counter60:comb_11|Q~17     ; |time1|counter60:comb_11|Q~17     ; out              ;
+; |time1|counter60:comb_11|Q~18     ; |time1|counter60:comb_11|Q~18     ; out              ;
+; |time1|counter60:comb_11|Q~24     ; |time1|counter60:comb_11|Q~24     ; out              ;
+; |time1|counter60:comb_11|Q~25     ; |time1|counter60:comb_11|Q~25     ; out              ;
+; |time1|counter60:comb_11|Q~26     ; |time1|counter60:comb_11|Q~26     ; out              ;
+; |time1|counter60:comb_11|Q~32     ; |time1|counter60:comb_11|Q~32     ; out              ;
+; |time1|counter60:comb_11|Q~33     ; |time1|counter60:comb_11|Q~33     ; out              ;
+; |time1|counter60:comb_11|Q~34     ; |time1|counter60:comb_11|Q~34     ; out              ;
+; |time1|counter60:comb_11|Q~40     ; |time1|counter60:comb_11|Q~40     ; out              ;
+; |time1|counter60:comb_11|Q~41     ; |time1|counter60:comb_11|Q~41     ; out              ;
+; |time1|counter60:comb_11|Q~42     ; |time1|counter60:comb_11|Q~42     ; out              ;
+; |time1|counter60:comb_11|Cout~0   ; |time1|counter60:comb_11|Cout~0   ; out              ;
+; |time1|counter60:comb_11|Q[7]     ; |time1|counter60:comb_11|Q[7]     ; regout           ;
+; |time1|counter60:comb_11|Q[6]     ; |time1|counter60:comb_11|Q[6]     ; regout           ;
+; |time1|counter60:comb_11|Q[5]     ; |time1|counter60:comb_11|Q[5]     ; regout           ;
+; |time1|counter60:comb_11|Q[4]     ; |time1|counter60:comb_11|Q[4]     ; regout           ;
+; |time1|counter60:comb_11|Q[3]     ; |time1|counter60:comb_11|Q[3]     ; regout           ;
+; |time1|counter60:comb_6|Q~0       ; |time1|counter60:comb_6|Q~0       ; out              ;
+; |time1|counter60:comb_6|Q~8       ; |time1|counter60:comb_6|Q~8       ; out              ;
+; |time1|counter60:comb_6|Q~16      ; |time1|counter60:comb_6|Q~16      ; out              ;
+; |time1|counter60:comb_6|Q~24      ; |time1|counter60:comb_6|Q~24      ; out              ;
+; |time1|counter60:comb_6|Q~32      ; |time1|counter60:comb_6|Q~32      ; out              ;
+; |time1|counter60:comb_6|Q~40      ; |time1|counter60:comb_6|Q~40      ; out              ;
+; |time1|counter60:comb_6|Q[7]      ; |time1|counter60:comb_6|Q[7]      ; regout           ;
+; |time1|CNT_003:comb_5|Q~0         ; |time1|CNT_003:comb_5|Q~0         ; out              ;
+; |time1|CNT_003:comb_5|Q~1         ; |time1|CNT_003:comb_5|Q~1         ; out              ;
+; |time1|CNT_003:comb_5|Q~2         ; |time1|CNT_003:comb_5|Q~2         ; out              ;
+; |time1|CNT_003:comb_5|Q~3         ; |time1|CNT_003:comb_5|Q~3         ; out              ;
+; |time1|CNT_003:comb_5|Q~4         ; |time1|CNT_003:comb_5|Q~4         ; out              ;
+; |time1|CNT_003:comb_5|Q~5         ; |time1|CNT_003:comb_5|Q~5         ; out              ;
+; |time1|CNT_003:comb_5|Q~6         ; |time1|CNT_003:comb_5|Q~6         ; out              ;
+; |time1|CNT_003:comb_5|Q~7         ; |time1|CNT_003:comb_5|Q~7         ; out              ;
+; |time1|CNT_003:comb_5|Q~8         ; |time1|CNT_003:comb_5|Q~8         ; out              ;
+; |time1|CNT_003:comb_5|Cout~0      ; |time1|CNT_003:comb_5|Cout~0      ; out              ;
+; |time1|CNT_003:comb_5|Cout~1      ; |time1|CNT_003:comb_5|Cout~1      ; out              ;
+; |time1|CNT_003:comb_5|Cout        ; |time1|CNT_003:comb_5|Cout        ; regout           ;
+; |time1|CNT_003:comb_5|Q[23]       ; |time1|CNT_003:comb_5|Q[23]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[22]       ; |time1|CNT_003:comb_5|Q[22]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[21]       ; |time1|CNT_003:comb_5|Q[21]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[20]       ; |time1|CNT_003:comb_5|Q[20]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[19]       ; |time1|CNT_003:comb_5|Q[19]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[18]       ; |time1|CNT_003:comb_5|Q[18]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[17]       ; |time1|CNT_003:comb_5|Q[17]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[16]       ; |time1|CNT_003:comb_5|Q[16]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[15]       ; |time1|CNT_003:comb_5|Q[15]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[14]       ; |time1|CNT_003:comb_5|Q[14]       ; regout           ;
+; |time1|CNT_003:comb_5|Q[13]       ; |time1|CNT_003:comb_5|Q[13]       ; regout           ;
+; |time1|yima:comb_17|Decoder0~0    ; |time1|yima:comb_17|Decoder0~0    ; out              ;
+; |time1|yima:comb_17|Decoder0~1    ; |time1|yima:comb_17|Decoder0~1    ; out              ;
+; |time1|yima:comb_17|Decoder0~2    ; |time1|yima:comb_17|Decoder0~2    ; out              ;
+; |time1|yima:comb_17|Decoder0~3    ; |time1|yima:comb_17|Decoder0~3    ; out              ;
+; |time1|yima:comb_17|Decoder0~4    ; |time1|yima:comb_17|Decoder0~4    ; out              ;
+; |time1|yima:comb_17|Decoder0~5    ; |time1|yima:comb_17|Decoder0~5    ; out              ;
+; |time1|yima:comb_17|Decoder0~6    ; |time1|yima:comb_17|Decoder0~6    ; out              ;
+; |time1|yima:comb_17|Decoder0~7    ; |time1|yima:comb_17|Decoder0~7    ; out              ;
+; |time1|yima:comb_17|Decoder0~8    ; |time1|yima:comb_17|Decoder0~8    ; out              ;
+; |time1|yima:comb_17|Decoder0~9    ; |time1|yima:comb_17|Decoder0~9    ; out              ;
+; |time1|yima:comb_17|Decoder0~10   ; |time1|yima:comb_17|Decoder0~10   ; out              ;
+; |time1|yima:comb_17|Decoder0~11   ; |time1|yima:comb_17|Decoder0~11   ; out              ;
+; |time1|yima:comb_17|Decoder0~12   ; |time1|yima:comb_17|Decoder0~12   ; out              ;
+; |time1|yima:comb_17|Decoder0~13   ; |time1|yima:comb_17|Decoder0~13   ; out              ;
+; |time1|yima:comb_17|Decoder0~14   ; |time1|yima:comb_17|Decoder0~14   ; out              ;
+; |time1|yima:comb_17|Decoder1~0    ; |time1|yima:comb_17|Decoder1~0    ; out              ;
+; |time1|yima:comb_17|Decoder1~1    ; |time1|yima:comb_17|Decoder1~1    ; out              ;
+; |time1|yima:comb_17|Decoder1~2    ; |time1|yima:comb_17|Decoder1~2    ; out              ;
+; |time1|yima:comb_17|Decoder1~3    ; |time1|yima:comb_17|Decoder1~3    ; out              ;
+; |time1|yima:comb_17|Decoder1~4    ; |time1|yima:comb_17|Decoder1~4    ; out              ;
+; |time1|yima:comb_17|Decoder1~5    ; |time1|yima:comb_17|Decoder1~5    ; out              ;
+; |time1|yima:comb_17|Decoder1~6    ; |time1|yima:comb_17|Decoder1~6    ; out              ;
+; |time1|yima:comb_17|Decoder1~7    ; |time1|yima:comb_17|Decoder1~7    ; out              ;
+; |time1|yima:comb_17|Decoder1~8    ; |time1|yima:comb_17|Decoder1~8    ; out              ;
+; |time1|yima:comb_17|Decoder1~9    ; |time1|yima:comb_17|Decoder1~9    ; out              ;
+; |time1|yima:comb_17|Decoder1~10   ; |time1|yima:comb_17|Decoder1~10   ; out              ;
+; |time1|yima:comb_17|Decoder1~11   ; |time1|yima:comb_17|Decoder1~11   ; out              ;
+; |time1|yima:comb_17|Decoder1~12   ; |time1|yima:comb_17|Decoder1~12   ; out              ;
+; |time1|yima:comb_17|Decoder1~13   ; |time1|yima:comb_17|Decoder1~13   ; out              ;
+; |time1|yima:comb_17|Decoder1~14   ; |time1|yima:comb_17|Decoder1~14   ; out              ;
+; |time1|yima:comb_12|Decoder0~7    ; |time1|yima:comb_12|Decoder0~7    ; out              ;
+; |time1|yima:comb_12|Decoder0~8    ; |time1|yima:comb_12|Decoder0~8    ; out              ;
+; |time1|yima:comb_12|Decoder0~9    ; |time1|yima:comb_12|Decoder0~9    ; out              ;
+; |time1|yima:comb_12|Decoder0~10   ; |time1|yima:comb_12|Decoder0~10   ; out              ;
+; |time1|yima:comb_12|Decoder0~11   ; |time1|yima:comb_12|Decoder0~11   ; out              ;
+; |time1|yima:comb_12|Decoder0~12   ; |time1|yima:comb_12|Decoder0~12   ; out              ;
+; |time1|yima:comb_12|Decoder0~13   ; |time1|yima:comb_12|Decoder0~13   ; out              ;
+; |time1|yima:comb_12|Decoder0~14   ; |time1|yima:comb_12|Decoder0~14   ; out              ;
+; |time1|yima:comb_12|Decoder1~0    ; |time1|yima:comb_12|Decoder1~0    ; out              ;
+; |time1|yima:comb_12|Decoder1~1    ; |time1|yima:comb_12|Decoder1~1    ; out              ;
+; |time1|yima:comb_12|Decoder1~2    ; |time1|yima:comb_12|Decoder1~2    ; out              ;
+; |time1|yima:comb_12|Decoder1~3    ; |time1|yima:comb_12|Decoder1~3    ; out              ;
+; |time1|yima:comb_12|Decoder1~4    ; |time1|yima:comb_12|Decoder1~4    ; out              ;
+; |time1|yima:comb_12|Decoder1~5    ; |time1|yima:comb_12|Decoder1~5    ; out              ;
+; |time1|yima:comb_12|Decoder1~6    ; |time1|yima:comb_12|Decoder1~6    ; out              ;
+; |time1|yima:comb_12|Decoder1~7    ; |time1|yima:comb_12|Decoder1~7    ; out              ;
+; |time1|yima:comb_12|Decoder1~8    ; |time1|yima:comb_12|Decoder1~8    ; out              ;
+; |time1|yima:comb_12|Decoder1~9    ; |time1|yima:comb_12|Decoder1~9    ; out              ;
+; |time1|yima:comb_12|Decoder1~10   ; |time1|yima:comb_12|Decoder1~10   ; out              ;
+; |time1|yima:comb_12|Decoder1~11   ; |time1|yima:comb_12|Decoder1~11   ; out              ;
+; |time1|yima:comb_12|Decoder1~12   ; |time1|yima:comb_12|Decoder1~12   ; out              ;
+; |time1|yima:comb_12|Decoder1~13   ; |time1|yima:comb_12|Decoder1~13   ; out              ;
+; |time1|yima:comb_12|Decoder1~14   ; |time1|yima:comb_12|Decoder1~14   ; out              ;
+; |time1|counter24:comb_16|Add0~0   ; |time1|counter24:comb_16|Add0~0   ; out0             ;
+; |time1|counter24:comb_16|Add0~1   ; |time1|counter24:comb_16|Add0~1   ; out0             ;
+; |time1|counter24:comb_16|Add0~2   ; |time1|counter24:comb_16|Add0~2   ; out0             ;
+; |time1|counter24:comb_16|Add0~3   ; |time1|counter24:comb_16|Add0~3   ; out0             ;
+; |time1|counter24:comb_16|Add0~4   ; |time1|counter24:comb_16|Add0~4   ; out0             ;
+; |time1|counter24:comb_16|Add0~5   ; |time1|counter24:comb_16|Add0~5   ; out0             ;
+; |time1|counter24:comb_16|Add0~6   ; |time1|counter24:comb_16|Add0~6   ; out0             ;
+; |time1|counter24:comb_16|Add0~7   ; |time1|counter24:comb_16|Add0~7   ; out0             ;
+; |time1|counter24:comb_16|Add0~8   ; |time1|counter24:comb_16|Add0~8   ; out0             ;
+; |time1|counter24:comb_16|Add0~9   ; |time1|counter24:comb_16|Add0~9   ; out0             ;
+; |time1|counter24:comb_16|Add0~10  ; |time1|counter24:comb_16|Add0~10  ; out0             ;
+; |time1|counter24:comb_16|Add0~11  ; |time1|counter24:comb_16|Add0~11  ; out0             ;
+; |time1|counter24:comb_16|Add0~12  ; |time1|counter24:comb_16|Add0~12  ; out0             ;
+; |time1|counter60:comb_11|Add0~7   ; |time1|counter60:comb_11|Add0~7   ; out0             ;
+; |time1|counter60:comb_11|Add0~8   ; |time1|counter60:comb_11|Add0~8   ; out0             ;
+; |time1|counter60:comb_11|Add0~9   ; |time1|counter60:comb_11|Add0~9   ; out0             ;
+; |time1|counter60:comb_11|Add0~10  ; |time1|counter60:comb_11|Add0~10  ; out0             ;
+; |time1|counter60:comb_11|Add0~11  ; |time1|counter60:comb_11|Add0~11  ; out0             ;
+; |time1|counter60:comb_11|Add0~12  ; |time1|counter60:comb_11|Add0~12  ; out0             ;
+; |time1|counter60:comb_6|Add0~11   ; |time1|counter60:comb_6|Add0~11   ; out0             ;
+; |time1|counter60:comb_6|Add0~12   ; |time1|counter60:comb_6|Add0~12   ; out0             ;
+; |time1|CNT_003:comb_5|Add0~27     ; |time1|CNT_003:comb_5|Add0~27     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~28     ; |time1|CNT_003:comb_5|Add0~28     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~29     ; |time1|CNT_003:comb_5|Add0~29     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~30     ; |time1|CNT_003:comb_5|Add0~30     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~31     ; |time1|CNT_003:comb_5|Add0~31     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~32     ; |time1|CNT_003:comb_5|Add0~32     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~33     ; |time1|CNT_003:comb_5|Add0~33     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~34     ; |time1|CNT_003:comb_5|Add0~34     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~35     ; |time1|CNT_003:comb_5|Add0~35     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~36     ; |time1|CNT_003:comb_5|Add0~36     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~37     ; |time1|CNT_003:comb_5|Add0~37     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~38     ; |time1|CNT_003:comb_5|Add0~38     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~39     ; |time1|CNT_003:comb_5|Add0~39     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~40     ; |time1|CNT_003:comb_5|Add0~40     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~41     ; |time1|CNT_003:comb_5|Add0~41     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~42     ; |time1|CNT_003:comb_5|Add0~42     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~43     ; |time1|CNT_003:comb_5|Add0~43     ; out0             ;
+; |time1|CNT_003:comb_5|Add0~44     ; |time1|CNT_003:comb_5|Add0~44     ; out0             ;
+; |time1|counter24:comb_16|Equal0~0 ; |time1|counter24:comb_16|Equal0~0 ; out0             ;
+; |time1|counter24:comb_16|Equal1~0 ; |time1|counter24:comb_16|Equal1~0 ; out0             ;
+; |time1|counter24:comb_16|Equal2~0 ; |time1|counter24:comb_16|Equal2~0 ; out0             ;
+; |time1|counter60:comb_11|Equal0~0 ; |time1|counter60:comb_11|Equal0~0 ; out0             ;
+; |time1|counter60:comb_11|Equal1~0 ; |time1|counter60:comb_11|Equal1~0 ; out0             ;
+; |time1|counter60:comb_11|Equal2~0 ; |time1|counter60:comb_11|Equal2~0 ; out0             ;
+; |time1|counter60:comb_11|Equal3~0 ; |time1|counter60:comb_11|Equal3~0 ; out0             ;
+; |time1|counter60:comb_11|Equal4~0 ; |time1|counter60:comb_11|Equal4~0 ; out0             ;
+; |time1|counter60:comb_11|Equal5~0 ; |time1|counter60:comb_11|Equal5~0 ; out0             ;
+; |time1|CNT_003:comb_5|Equal0~0    ; |time1|CNT_003:comb_5|Equal0~0    ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jul 09 10:24:50 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off test -c test
+Info: Using vector source file "C:/Users/27687/Desktop/test/time1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      45.62 %
+Info: Number of transitions in simulation is 218790
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Tue Jul 09 10:24:51 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

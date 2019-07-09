@@ -1,0 +1,114 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 19:52:17  June 02, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		test_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY time1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:52:17  JUNE 02, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name LL_ROOT_REGION ON -entity test -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity test -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name CHECK_OUTPUTS OFF
+set_global_assignment -name SIMULATOR_GENERATE_POWERPLAY_VCD_FILE OFF
+set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+set_global_assignment -name MISC_FILE "C:/Users/27687/Desktop/test/test.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name VECTOR_WAVEFORM_FILE time1.vwf
+set_global_assignment -name VERILOG_FILE time1.v
+set_global_assignment -name VERILOG_FILE counter60.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE counter60.vwf
+set_global_assignment -name VERILOG_FILE CNT_002.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT_002.vwf
+set_global_assignment -name VERILOG_FILE counter24.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE counter24.vwf
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name VERILOG_FILE yima.v
+set_location_assignment PIN_17 -to clk
+set_location_assignment PIN_114 -to FI
+set_location_assignment PIN_115 -to SI
+set_location_assignment PIN_91 -to EN
+set_location_assignment PIN_90 -to rst
+set_location_assignment PIN_122 -to q11
+set_location_assignment PIN_120 -to q21[0]
+set_location_assignment PIN_121 -to q21[1]
+set_location_assignment PIN_125 -to q21[2]
+set_location_assignment PIN_129 -to q21[3]
+set_location_assignment PIN_133 -to q21[4]
+set_location_assignment PIN_126 -to q21[5]
+set_location_assignment PIN_132 -to q21[6]
+set_location_assignment PIN_134 -to q22[0]
+set_location_assignment PIN_135 -to q22[1]
+set_location_assignment PIN_137 -to q22[2]
+set_location_assignment PIN_141 -to q22[3]
+set_location_assignment PIN_143 -to q22[4]
+set_location_assignment PIN_139 -to q22[5]
+set_location_assignment PIN_142 -to q22[6]
+set_location_assignment PIN_24 -to q31[0]
+set_location_assignment PIN_25 -to q31[1]
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_location_assignment PIN_27 -to q31[2]
+set_location_assignment PIN_30 -to q31[3]
+set_location_assignment PIN_8 -to q31[4]
+set_location_assignment PIN_28 -to q31[5]
+set_location_assignment PIN_9 -to q31[6]
+set_location_assignment PIN_44 -to q32[0]
+set_location_assignment PIN_45 -to q32[1]
+set_location_assignment PIN_43 -to q32[2]
+set_location_assignment PIN_41 -to q32[3]
+set_location_assignment PIN_32 -to q32[4]
+set_location_assignment PIN_40 -to q32[5]
+set_location_assignment PIN_31 -to q32[6]
+set_global_assignment -name VERILOG_FILE CNT_003.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE time1.vwf

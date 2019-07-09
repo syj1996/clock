@@ -1,0 +1,22 @@
+module time1(clk,rst,EN,q11,q21,q22,q31,q32,Cout,FI,SI);
+input clk,rst,EN,FI,SI;
+output Cout,q11;
+output [6:0]q21;
+output [6:0]q22;
+output [6:0]q31;
+output [6:0]q32;
+wire  [7:0]Q1;
+wire  [7:0]Q2;
+wire  [7:0]Q3;
+wire Clk,Clk1,Cs,CF,Cs1,CF1;
+CNT_002(clk,rst,EN,Clk);
+CNT_003(clk,rst,EN,Clk1);
+counter60(Clk,rst,Cs,EN,Q1);
+assign q11=Clk;
+assign Cs1=Cs||(~FI&&Clk1);
+counter60(Cs1,rst,CF,EN,Q2);
+yima(Q2,q21,q22);
+assign CF1=CF||(~SI&&Clk1);
+counter24(CF1,rst,Cout,EN,Q3);
+yima(Q3,q31,q32);
+endmodule 

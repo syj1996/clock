@@ -1,0 +1,5 @@
+module yima(Q,Q1,Q2);
+input [7:0]Q;
+output [6:0]Q1;
+output reg [6:0]Q2;
+

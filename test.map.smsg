@@ -1,0 +1,5 @@
+Info (10281): Verilog HDL Declaration information at time1.v(2): object "clk" differs only in case from object "Clk" in the same scope
+Warning (10268): Verilog HDL information at CNT_002.v(5): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at yima.v(3): object "Q1" differs only in case from object "q1" in the same scope
+Info (10281): Verilog HDL Declaration information at yima.v(4): object "Q2" differs only in case from object "q2" in the same scope
+Warning (10268): Verilog HDL information at CNT_003.v(5): always construct contains both blocking and non-blocking assignments
